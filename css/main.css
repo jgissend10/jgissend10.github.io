@@ -3,17 +3,98 @@
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html {
+    min-height: 100%;
+}
 
 body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
 	background-image:
 	repeating-linear-gradient(120deg, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 60px),
 	repeating-linear-gradient(60deg, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 60px),
 	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
 	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
 	background-size: 70px 120px;
+	//animation: example 10s linear infinite alternate;
+    background-color: #4682B4;
+    background-attachment: fixed; 
 }
 
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+}
 
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:red;}
+    25%  {background-color:yellow;}
+    50%  {background-color:blue;}
+    75%  {background-color:green;}
+    100% {background-color:red;}
+}
 
+.container {
+    background-color: rgba(255, 255, 255, .6);
+    min-height: 100%;
+    width: 70%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
+.social {
+    float: right;
+    margin-right:5px;
+    margin-bottom:5px;
+    position:relative;
+}
 
+.box
+{
+    position: relative;
+    width: 90%;
+    padding: 10px 40px 50px 40px;
+    margin: 10px auto;
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.box:before, .box:after
+{
+    position: absolute;
+    width: 40%;
+    height: 10px;
+    content: ' ';
+    left: 12px;
+    bottom: 12px;
+    background: transparent;
+    -webkit-transform: skew(-5deg) rotate(-5deg);
+    -moz-transform: skew(-5deg) rotate(-5deg);
+    -ms-transform: skew(-5deg) rotate(-5deg);
+    -o-transform: skew(-5deg) rotate(-5deg);
+    transform: skew(-5deg) rotate(-5deg);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    z-index: -1;
+} 
+
+.box:after
+{
+    left: auto;
+    right: 12px;
+    -webkit-transform: skew(5deg) rotate(5deg);
+    -moz-transform: skew(5deg) rotate(5deg);
+    -ms-transform: skew(5deg) rotate(5deg);
+    -o-transform: skew(5deg) rotate(5deg);
+    transform: skew(5deg) rotate(5deg);
+}
