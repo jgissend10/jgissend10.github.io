@@ -44,7 +44,7 @@ body {
 .container {
     background-color: rgba(255, 255, 255, .6);
     min-height: 100%;
-    width: 70%;
+    width: 90%;
     min-width: 320px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -65,6 +65,10 @@ body {
         -webkit-column-gap: 40px;
         column-gap: 40px;
         -moz-column-gap: 40px;
+    }
+
+    .container {
+        width: 70%;
     }
 }
 
