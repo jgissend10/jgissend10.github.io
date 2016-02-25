@@ -14,4 +14,5 @@ function makeColorGradient(frequency1, frequency2, frequency3,
   var grn = Math.sin(frequency2*i + phase2) * width + center;
   var blu = Math.sin(frequency3*i + phase3) * width + center;
   document.body.style.backgroundColor = RGB2Color(red,grn,blu)
+  $('h1,h2').css({'color' : RGB2Color(red,grn,blu)})
 }
