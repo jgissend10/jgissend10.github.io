@@ -45,14 +45,19 @@ body {
     background-color: rgba(255, 255, 255, .6);
     min-height: 100%;
     width: 70%;
-    min-width: 360px;
+    min-width: 320px;
     padding-top: 20px;
     padding-bottom: 20px;
 }
 
+.info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 
-@media (min-width: 800px) {
+@media (min-width: 799px) {
     .two-columns {
         -webkit-column-count: 2;
         -moz-column-count: 2;
@@ -61,20 +66,17 @@ body {
         column-gap: 40px;
         -moz-column-gap: 40px;
     }
+}
 
-    .social {
-        float: right;
-        margin-right:5px;
-        margin-bottom:5px;
-        position:relative;
-    }
+h3 small {
+    display: inline-block;
 }
 
 .box
 {
     position: relative;
     width: 90%;
-    padding: 10px 40px 50px 40px;
+    padding: 10px 40px 50px 30px;
     margin: 10px auto;
     background-color: #fff;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
