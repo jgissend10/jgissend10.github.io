@@ -56,6 +56,20 @@ body {
     flex-wrap: wrap;
 }
 
+.profile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.profile img {
+    height: 100%;
+    width: 140px;
+}
+
+.personal {
+    padding-right: 50px;
+}
 
 @media (min-width: 799px) {
     .two-columns {
@@ -80,7 +94,7 @@ h3 small {
 {
     position: relative;
     width: 90%;
-    padding: 10px 40px 50px 30px;
+    padding: 20px 40px 30px 30px;
     margin: 10px auto;
     background-color: #fff;
     -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);

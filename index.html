@@ -26,18 +26,24 @@
       <div class="container">
         <div class="row">
             <div class="box">
-                <h1>James<small>Gissendaner</small></h1>
-                <div class="info">
-                    <div class="personal">
-                        <div class="org">Graduate Student Assistant at University of Louisville</div>
-                        <div class="adr">
-                            <span class="locality">Louisville</span>, <span clss="region">KY</span></br>
+                <div class="profile">
+                    <img height="100%" width="140px" class="img-thumbnail img-circle " src="profile.jpg">
+                
+                    <div>
+                        <h1>James<small>Gissendaner</small></h1>
+                        <div class="info">
+                            <div class="personal">
+                                <div class="org">Graduate Student Assistant at University of Louisville</div>
+                                <div class="adr">
+                                    <span class="locality">Louisville</span>, <span clss="region">KY</span></br>
+                                </div>
+                            </div>
+                            <div class="social">
+                                <i class="fa fa-envelope"></i> > <a class="email" href="mailto:james@gissendaner.com">james (at) gissendaner (dot) com</a></br>
+                                <i class="fa fa-github"></i> > <a class="github" href="http://github.com/jgissend10">github.com/jgissend10</a></br>
+                                <i class="fa fa-linkedin"></i> > <a class="linkedin" href="http://www.linkedin.com/in/gissendaner">linkedin.com/in/gissendaner</a></br><i class="fa fa-file"></i> > <a class="resume" href="/Resume-JamesGissendaner.pdf">Resume</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="social">
-                        <i class="fa fa-envelope"></i> > <a class="email" href="mailto:james@gissendaner.com">james (at) gissendaner (dot) com</a></br>
-                        <i class="fa fa-github"></i> > <a class="github" href="http://github.com/jgissend10">github.com/jgissend10</a></br>
-                        <i class="fa fa-linkedin"></i> > <a class="linkedin" href="http://www.linkedin.com/in/gissendaner">linkedin.com/in/gissendaner</a></br><i class="fa fa-file"></i> > <a class="resume" href="/Resume-JamesGissendaner.pdf">Resume</a>
                     </div>
                 </div>
             </div>
@@ -141,6 +147,10 @@ Assisted with General Organization.</p></div>
                     <li>Board Games</li>
                 </ul>
             </div>
+            <div class="box">
+                <div><h2>Other</h2></div>
+                <p>Want some color on this page? Click my name!</p>
+            </div>
         </div>
       </div>
 
@@ -163,7 +173,15 @@ Assisted with General Organization.</p></div>
 
         <script type="text/javascript">
           var colorIndex = 0;
-          $("h1").click(function () { if (colorIndex == 0) {setInterval(function() {makeColorGradient(.1,.2,.3,0,2,4, 130,20,colorIndex);colorIndex++;}, 100)}})
+          $("h1").click(function () {
+            if (colorIndex == 0)
+                {
+                    setInterval(function() {
+                        makeColorGradient(.1,.2,.3,0,2,4, 130,20,colorIndex);colorIndex++;
+                    }, 100);
+                    $(".profile > img").attr("src", "profile-color.jpg");
+                }
+            })
         </script>
     </body>
 </html>
