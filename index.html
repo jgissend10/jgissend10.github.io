@@ -25,7 +25,7 @@
     
       <div class="container">
         <div class="row">
-            <div class="box">
+            <div id="me" class="box">
                 <div class="profile">
                     <img height="100%" width="140px" class="img-thumbnail img-circle " src="profile.jpg">
                 
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-            <div class="box">
+            <div id="skills" class="box">
                 <div><h2>Skills</h2></div>
                 <ul class="two-columns">
                     <li>Python</li>
@@ -61,17 +61,17 @@
                     <li>Git</li>
                 </ul>
             </div>
-            <div class="box">
+            <div id="edu" class="box">
                 <div><h2>Education</h2></div>
                 <div><h3>University of Louisville <small>2015 - 2016</small></h3><h4>Master of Engineering (M.Eng.), Computer Engineering and Computer Science</h4></div>
                 <div><h3>University of Louisville <small>2010 – 2015</small></h3><h4>Bachelor of Science (BCC), Computer Engineering and Computer Science</h4></div>
             </div>
-            <div class="box">
+            <div id="work" class="box">
                 <div><h2>Experience</h2></div>
                 <div><h3>Graduate Student Assistant <small>August 2015 - Present</small></h3><h4>University of Louisville - Speed School IT</h4>
                     <ul>
                         <li>Resolution and Assignment of escalated helpdesk tickets.</li>
-                        <li>Development of Helpdesk kiosk for student check-in.</li>
+                        <li>Development of <a href="#speedkiosk">Helpdesk kiosk</a> for student check-in.</li>
                         <li>MSSQL server administration.</li>
                     </ul>
                 </div>
@@ -97,6 +97,7 @@
                         <li>Resolution and Assignment of helpdesk tickets</li>
                         <li>Customer Service among peers (students) as well as Faculty/Deans of the Engineering School</li>
                         <li>Strict adherence to best practices among IT professionals when dealing with PC repair/troubleshooting</li>
+                        <li>Creation of <a href="#cecsam">Asset Management</a> system</li>
                     </ul>
                 </div>
                 <div><h3>Software Developer (Co-op) <small>January 2012 - April 2012</small></h3><h4>AdvantaChart, Inc.</h4>
@@ -109,32 +110,34 @@
                     </ul>
                 </div>
             </div>
-            <div class="box">
+            <div id="projects" class="box">
                 <div><h2>Projects</h2></div>
-                <div><h3><a href="http://devpost.com/software/mirrormirror">Mirror Mirror: Voice and Gesture controlled Smart Mirror</a> <small>January 2016</small></h3><h4>Placed Second at DragonHacks Hackathon Spring 2016.</h4><p>Technology employed: Python, Flask, Socket.io, Myo Armband, HTML/JQuery</p></div>
-                <div><h3>HolySmokes: Internet Connected Smoke Detector Management System <small>November 2015</small></h3><h4>Best Overall in Hackathon</h4><p>Technology employed: Python, Redis, HTML5/JQuery and Bootstrap</br>Created for the HolySmokes Hackathon</p></div>
-                <div><h3><a href="http://devpost.com/software/codejar">CodeJar</a> <small>November 2014</small></h3><p>PayPal/Venmo Prize at WildHacks Hackathon Fall 2014.</p></div>
-                <div><h3><a href="http://devpost.com/software/ourhomedash">OurHomeDash</a> <small>November 2014</small></h3><p>Placed Third at RevolutionUC Hackathon Fall 2014.</p></div>
-                <div><h3><a href="https://www.youtube.com/watch?v=KcBsuqEFp5c">Simulation of Group Navigation Using Unmanned Aerial Vehicles</a> <small>April 2014</small></h3><p>Technology employed: Matlab and Simulink</br>Created: Spring 2014 for Capstone Course</p></div>
-                <div><h3>CECSAM: Asset Management Software for the CECS Department <small>April 2014</small></h3><p>Technology employed: Python with Django, HTML5/JQuery and Bootstrap</p></div>
-                <div><h3>IPAM: IP Asset Management Software <small>December 2013</small></h3><p>Technology employed: Ruby with Sinatra, HTML5/JQuery and Bootstrap</p></div>
+                <div id="mirrormirror"><h3><a href="http://devpost.com/software/mirrormirror">Mirror Mirror: Voice and Gesture controlled Smart Mirror</a> <small>January 2016</small></h3><h4>Placed Second at DragonHacks Hackathon Spring 2016.</h4><p>Technology employed: Python, Flask, Socket.io, Myo Armband, HTML/JQuery</p></div>
+                <div id="speedkiosk"><h3>SpeedKiosk: Welcome Desk Kiosk for the Speed IT Department <small>October 2015</small></h3><p>Technology employed: C#, .net, MSSQL, MSSQL:SSIS, HTML5/JQuery and Bootstrap</p></div>
+                <div id="holysmokes"><h3>HolySmokes: Internet Connected Smoke Detector Management System <small>November 2015</small></h3><h4>Best Overall in Hackathon</h4><p>Technology employed: Python, Redis, HTML5/JQuery and Bootstrap</br>Created for the HolySmokes Hackathon</p></div>
+                <div id="roombatank"><h3><a href="https://www.youtube.com/watch?v=tb_rIsLIF_o">Roomba Tank</a> <small>December 2014</small></h3><p>Technology employed: Python, Google Cardboard VR, LeapMotion, iRobot Create (Roomba), Raspberry Pi, USB Nerf Dart Launcher</br>Created: Fall 2014 for Introdcution to Embedded Computing Course</p></div>
+                <div id="codejar"><h3><a href="http://devpost.com/software/codejar">CodeJar</a> <small>November 2014</small></h3><h4>PayPal/Venmo Prize at WildHacks Hackathon Fall 2014.</h4><p>Technology employed: Python with Django, HTML5/JQuery and Bootstrap</p></div>
+                <div id="ourhomedash"><h3><a href="http://devpost.com/software/ourhomedash">OurHomeDash</a> <small>November 2014</small></h3><h4>Placed Third at RevolutionUC Hackathon Fall 2014.</h4><p>Technology employed: Go, HTML5/JQuery and Bootstrap, OpenHAB</p></div>
+                <div id="drones"><h3><a href="https://www.youtube.com/watch?v=KcBsuqEFp5c">Simulation of Group Navigation Using Unmanned Aerial Vehicles</a> <small>April 2014</small></h3><p>Technology employed: Matlab and Simulink</br>Created: Spring 2014 for Capstone Course</p></div>
+                <div id="cecsam"><h3>CECSAM: Asset Management Software for the CECS Department <small>April 2014</small></h3><p>Technology employed: Python with Django, HTML5/JQuery and Bootstrap</p></div>
+                <div id="ipam"><h3>IPAM: IP Asset Management Software <small>December 2013</small></h3><p>Technology employed: Ruby with Sinatra, HTML5/JQuery and Bootstrap</br>Created: Fall 2013 for Software Engineering Course</p></div>
             </div>
-            <div class="box">
+            <div id="orgs" class="box">
                 <div><h2>Organizations</h2></div>
-                <div><h3>Association for Computing Machinery - UofL Student Chapter <small>Starting October 2010</small></h3><h4>Lab Manager (2013-2014)</h4><p>Student interest groups: Cyber Defense, Student Linux User Group, Hackathon SIG</p></div>
-                <div><h3>Louisville Country Dancers <small>Starting April 2010</small></h3><h4>Board Member at Large (2015-Present)</h4></div>
-                <div><h3>LVL1 Louisville Hackerspace <small>Starting December 2015</small></h3><h4>Member</h4></div>
+                <div id="acm"><h3>Association for Computing Machinery - UofL Student Chapter <small>Starting October 2010</small></h3><h4>Lab Manager (2013-2014)</h4><p>Student Interest Groups: Cyber Defense, Student Linux User Group, Hackathon SIG</p></div>
+                <div id="lcd"><h3>Louisville Country Dancers <small>Starting April 2010</small></h3><h4>Board Member at Large (2015-Present)</h4></div>
+                <div id="lvl1"><h3>LVL1 Louisville Hackerspace <small>Starting December 2015</small></h3><h4>Member</h4></div>
             </div>
-            <div class="box">
+            <div  id="awards" class="box">
                 <div><h2>Awards</h2></div>
                 <div><h3>2nd Place - Hackathon Project <small>January 2016</small></h3><h4>DragonHacks 2016</h4>
-                    <p>For Project "Mirror Mirror"</p>
+                    <p>For Project <a href="#mirrormirror">"Mirror Mirror"</a></p>
                 </div>
                 <div><h3>Developer's Choice Prize <small>November 2014</small></h3><h4>Paypal/Venmo, WildHacks @ Northwestern University</h4>
-                    <p>For Project "CodeJar"</p>
+                    <p>For Project <a href="#codejar">"CodeJar"</a></p>
                 </div>
                 <div><h3>3rd Place - Hackathon Project <small>November 2014</small></h3><h4>RevolutionUC 2014</h4>
-                    <p>For Project "OurHomeDash"</p>
+                    <p>For Project <a href="#ourhomedash">"OurHomeDash"</a></p>
                 </div>
                 <div><h3>3rd Place - National Collegiate Cyber Defense Competition <small>April 2011</small></h3><h4>National Collegiate Cyber Defense Competition</h4>
                     <p>Member of UofL Cyber Defense Team</p>
@@ -143,13 +146,13 @@
                     <p>Member of UofL Cyber Defense Team</p>
                 </div>
             </div>
-            <div class="box">
+            <div id="volunteering" class="box">
                 <div><h2>Volunteering</h2></div>
                 <div><h3>Quick Recall Tutor <small>August 2004 – May 2014 (9 years 10 months)</small></h3><h4>Breckinridge/Franklin Elementary School</h4>
                     <p>Attended weekly meetings to assist with the team to tutor students in science and mathematics.
 Assisted with General Organization.</p></div>
             </div>
-            <div class="box">
+            <div id="hobbies" class="box">
                 <div><h2>Hobbies</h2></div>
                 <ul>
                     <li>Hackathons</li>
@@ -158,7 +161,7 @@ Assisted with General Organization.</p></div>
                     <li>Board Games</li>
                 </ul>
             </div>
-            <div class="box">
+            <div id="other" class="box">
                 <div><h2>Other</h2></div>
                 <p>Want some color on this page? Click my name or photo!</p>
             </div>
