@@ -170,6 +170,7 @@ Assisted with General Organization.</p></div>
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.0.9/scrollreveal.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -182,6 +183,8 @@ Assisted with General Organization.</p></div>
         </script>
 
         <script type="text/javascript">
+          window.sr = ScrollReveal();
+          sr.reveal('.box', { duration: 200 });
           var colorIndex = 0;
           $("h1, .profile img").click(function () {
             if (colorIndex == 0)
