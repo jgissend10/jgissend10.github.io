@@ -13,33 +13,36 @@ body {
     min-height: 100%;
     padding-top: 50px;
     padding-bottom: 20px;
-	background-image:
-	repeating-linear-gradient(120deg, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 60px),
-	repeating-linear-gradient(60deg, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 60px),
-	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-	background-size: 70px 120px;
-	//animation: example 10s linear infinite alternate;
+  	background-image:
+  	repeating-linear-gradient(120deg, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 60px),
+  	repeating-linear-gradient(60deg, rgba(0,0,0,.1), rgba(0,0,0,.1) 1px, transparent 1px, transparent 60px),
+  	linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+  	linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+  	background-size: 70px 120px;
     background-color: #808080;
     background-attachment: fixed; 
 }
 
+.animated {
+  animation: example 30s linear infinite alternate;
+}
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes example {
-    0%   {background-color:red;}
-    25%  {background-color:yellow;}
-    50%  {background-color:blue;}
-    75%  {background-color:green;}
-    100% {background-color:red;}
+    0%   {background-color:#FF6961;}
+    25%  {background-color:#FDFD96;}
+    50%  {background-color:#AEC6CF;}
+    75%  {background-color:#77DD77;}
+    100% {background-color:#FF6961;}
 }
 
 /* Standard syntax */
 @keyframes example {
-    0%   {background-color:red;}
-    25%  {background-color:yellow;}
-    50%  {background-color:blue;}
-    75%  {background-color:green;}
-    100% {background-color:red;}
+    0%   {background-color:#FF6961;}
+    25%  {background-color:#FDFD96;}
+    50%  {background-color:#AEC6CF;}
+    75%  {background-color:#77DD77;}
+    100% {background-color:#FF6961;}
 }
 
 .container {

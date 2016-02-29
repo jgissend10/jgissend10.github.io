@@ -197,9 +197,10 @@ Assisted with General Organization.</p></div>
           $("h1, .profile img").click(function () {
             if (colorIndex == 0)
                 {
-                    setInterval(function() {
-                        makeColorGradient(.1,.2,.3,0,2,4, 130,20,colorIndex);colorIndex++;
-                    }, 100);
+                    //setInterval(function() {
+                    //    makeColorGradient(.1,.2,.3,0,2,4, 130,20,colorIndex);colorIndex++;
+                    //}, 100);
+                    $("body").addClass("animated");
                     $(".profile > img").attr("src", "profile-color.jpg");
                 }
             })
