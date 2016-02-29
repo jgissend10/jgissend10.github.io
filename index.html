@@ -202,6 +202,12 @@ Assisted with General Organization.</p></div>
                     //}, 100);
                     $("body").addClass("animated");
                     $(".profile > img").attr("src", "profile-color.jpg");
+                    colorIndex = 1;
+                }
+                else {
+                    $("body").removeClass("animated");
+                    $(".profile > img").attr("src", "profile.jpg");
+                    colorIndex = 0;
                 }
             })
           $(document).ready(function($){
