@@ -24,7 +24,7 @@ body {
 }
 
 .animated {
-  animation: example 90s linear infinite alternate;
+  animation: example 90s linear infinite alternate; /*This is a gradual change*/
 }
 
 /* Chrome, Safari, Opera */
