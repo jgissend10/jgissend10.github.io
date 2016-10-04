@@ -32,9 +32,9 @@
                         <h1>James<small>Gissendaner</small></h1>
                         <div class="info">
                             <div class="personal">
-                                <div class="org">Graduate Student Assistant at University of Louisville</div>
+                                <div class="org">Automation QA Engineer at Tenable Network Security</div>
                                 <div class="adr">
-                                    <span class="locality">Louisville</span>, <span clss="region">KY</span></br>
+                                    <span class="locality">Louisville</span>, <span class="region">KY</span></br>
                                 </div>
                             </div>
                             <div class="social">
@@ -52,13 +52,14 @@
                 <ul class="two-columns">
                     <li>Python</li>
                     <li>Django, Flask</li>
+                    <li>Selenium, PyTest</li>
                     <li>HTML, CSS, JS</li>
                     <li>PostgreSQL, MySQL</li>
                     <li>Redis</li>
                     <li>Node.Js</li>
-                    <li>Java</li>
                     <li>Linux Systems – Ubuntu, Debian</li>
                     <li>Git</li>
+                    <li>AWS - DynamoDB, Lambda, Api Gateway, SNS, Cognito</li>
                 </ul>
             </div>
             <div id="edu" class="box">
@@ -68,7 +69,12 @@
             </div>
             <div id="work" class="box">
                 <div><h2>Experience</h2></div>
-                <div><h3>Graduate Student Assistant <small>August 2015 - Present</small></h3><h4>University of Louisville - Speed School IT</h4>
+                <div><h3>Automation QA Engineer <small>August 2016 - Present</small></h3><h4>Tenable Network Security</h4>
+                    <ul>
+                        <li>Automation of QA tests using Python w/ Pytest and Selenium.</li>
+                    </ul>
+                </div>
+                <div><h3>Graduate Student Assistant <small>August 2015 - August 2016</small></h3><h4>University of Louisville - Speed School IT</h4>
                     <ul>
                         <li>Resolution and Assignment of escalated helpdesk tickets.</li>
                         <li>Development of <a href="#speedkiosk">Helpdesk kiosk</a> for student check-in.</li>
@@ -102,6 +108,11 @@
                 </div>
                 <div><h3>Software Developer (Co-op) <small>January 2012 - April 2012</small></h3><h4>AdvantaChart, Inc.</h4>
                     <p>Cooperative Education/Internship</p>
+                    <ul>
+                        <li>Resolution of customer issues by email and phone.</li>
+                        <li>Remote assitance for customers with product needs.</li>
+                        <li>MSSQL stored procedure development.</li>
+                    </ul>
                 </div>
                 <div><h3>Dietary Assistant <small>August 2009 - July 2014</small></h3><h4>Mercy Sacred Heart Village (Senior Living and Care Facility)</h4>
                     <ul>
@@ -134,7 +145,7 @@
                     <p>For Project <a href="#mirrormirror">"Mirror Mirror"</a></p>
                 </div>
                 <div><h3>Best Overall <small>November 2015</small></h3><h4>LVL1 Holy Smokes Hackathon</h4>
-                    <p>For Project <a href="#codejar">"HolySmokes: Internet Connected Smoke Detector Management System"</a></p>
+                    <p>For Project <a href="#holysmokes">"HolySmokes: Internet Connected Smoke Detector Management System"</a></p>
                 </div>
                 <div><h3>Developer's Choice Prize, Paypal/Venmo <small>November 2014</small></h3><h4>WildHacks @ Northwestern University</h4>
                     <p>For Project <a href="#codejar">"CodeJar"</a></p>
@@ -164,6 +175,7 @@ Assisted with General Organization.</p></div>
                     <li><a href="http://dance.gissendaner.com/">Ballroom and Contra Dancing</a></li>
                     <li><a href="http://boardgamegeek.com/collection/user/semajames">Board Games</a></li>
                     <li><a href="http://goodreads.com/jgissendaner">Reading</a></li>
+                    <li><a href="https://trakt.tv/users/semajames">TV Show/Movie Watching</a></li>
                 </ul>
             </div>
             <div id="other" class="box">
@@ -214,7 +226,7 @@ Assisted with General Organization.</p></div>
                     $(".profile > img").addClass("grey");
                     colorIndex = 0;
                 }
-            })
+            });
           $(document).ready(function($){
             // browser window scroll (in pixels) after which the "back to top" link is shown
             var offset = 300,
@@ -237,7 +249,7 @@ Assisted with General Organization.</p></div>
             $back_to_top.on('click', function(event){
                 event.preventDefault();
                 $('body,html').animate({
-                    scrollTop: 0 ,
+                    scrollTop: 0
                     }, scroll_top_duration
                 );
             });
